@@ -91,8 +91,17 @@ python src/infer.py \
 1. Upload this repo to GitHub.
 2. Open `traffic_light_colab_train_smoketest.ipynb` in Colab.
 3. Enable GPU runtime.
-4. Run all cells top-to-bottom.
-5. Smoke test cell performs dataset validation + 1-epoch CUDA training.
+4. In the Kaggle setup cell, set `DATASET_SLUG` to your dataset.
+5. Upload `kaggle.json` when prompted.
+6. Run all cells top-to-bottom.
+7. Smoke test cell performs dataset validation + 1-epoch CUDA training.
+
+The notebook now downloads and extracts the dataset directly in Colab and auto-detects a YOLO dataset root with:
+
+- `images/train`
+- `images/val`
+- `labels/train`
+- `labels/val`
 
 ## Runtime Integration Note
 
