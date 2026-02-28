@@ -1,0 +1,18 @@
+# Update `path` to your dataset root.
+# Expected structure:
+# traffic_lights/
+#   images/
+#     train/
+#     val/
+#   labels/
+#     train/
+#     val/
+#   data.yaml
+
+path: /content/drive/MyDrive/traffic_lights
+train: images/train
+val: images/val
+names:
+  0: redlight
+  1: yellowlight
+  2: greenlight
